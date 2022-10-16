@@ -1,0 +1,57 @@
+.resumeGrid {
+  display: grid;
+  position: relative;
+  width: 1100px;
+  grid-template-columns: 1.3fr 1fr;
+  margin: 24px auto;
+  box-shadow: 20px 5px 70px -54px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  padding: 48px;
+  box-sizing: border-box;
+  grid-template-rows: 1fr 55vh;
+}
+
+.header {
+  padding-top: 38px;
+  padding-right: 38px;
+  padding-left: 38px;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.cell {
+  padding-bottom: 38px;
+  padding-right: 38px;
+  padding-left: 38px;
+}
+
+.resumeGrid:after {
+  content: '';
+  background-color: #f6f8f9;
+  grid-column: 2;
+  grid-row: 1;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  top: -48px;
+  bottom: 0px;
+}
+
+.top {
+  grid-row: 1;
+  z-index: 2;
+}
+
+.right {
+  grid-column: 2;
+  z-index: 2;
+}
+
+.left {
+  grid-column: 1;
+}
+
+h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+}

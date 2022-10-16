@@ -1,0 +1,32 @@
+/* This CSS is common to all pages */
+
+body {
+  margin: 0;
+  font-family: 'Rajdhani', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  background-color: #e2e6e8;
+  font-weight: 500;
+  color: var(--basic-text-color);
+  font-size: 18px;
+}
+
+#page-view,
+.default-layout,
+.default-layout__content {
+  display: flex;
+  width: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+a {
+  display: inline;
+  text-decoration: none;
+  color: var(--clr-link);
+  border-bottom: 1px solid var(--clr-link-underline)
+}

@@ -1,0 +1,248 @@
+{
+  "name": "Alexandr Dubinin",
+  "job_title": "Front-end developer",
+  "contacts": [
+    {
+      "link": "mailto:akiyamka@gmail.com",
+      "label": "akiyamka@gmail.com"
+    },
+    {
+      "link": "https://t.me/akiyamka",
+      "label": "t.me/akiyamka"
+    },
+    {
+      "link": "https://github.com/Akiyamka",
+      "label": "github.com/Akiyamka"
+    },
+    {
+      "label": "Łódź, Poland"
+    }
+  ],
+  "skills": [
+    {
+      "title": "JavaScript",
+      "level": "expert"
+    },
+    {
+      "title": "Web APIs",
+      "level": "expert"
+    },
+    {
+      "title": "NodeJS",
+      "level": "advanced"
+    },
+    {
+      "title": "TypeScript",
+      "level": "advanced"
+    },
+    {
+      "title": "JavaScript OPS",
+      "level": "advanced",
+      "tip": "Build, code quality tools, code generators, docs generators, etc."
+    },
+    {
+      "title": "SPA/PWA Architecture",
+      "level": "advanced",
+      "tip": "MVC, MVVM, Reactive patterns, Clean architecture, SOLID"
+    },
+    {
+      "title": "UI/UX Design",
+      "level": "advanced",
+      "tip": "UX patterns, composition, animation, designers software"
+    },
+    {
+      "title": "GIS",
+      "level": "experienced",
+      "tip": "Mapbox, Leaflet, DeckGL, QGis, etc."
+    },
+    {
+      "title": "Version Control System",
+      "level": "experienced",
+      "tip": "GIT"
+    },
+    {
+      "title": "Team Leading",
+      "level": "experienced"
+    },
+    {
+      "title": "CI/CD",
+      "level": "experienced",
+      "tip": "Gitlab and Github runners"
+    },
+    {
+      "title": "Linux System Administrator",
+      "level": "experienced"
+    },
+    {
+      "title": "Access control",
+      "level": "experienced",
+      "tip": "OAuth, JWT, SSO, etc."
+    },
+    {
+      "title": "Databases",
+      "level": "intermediate"
+    },
+    {
+      "title": "Python",
+      "level": "intermediate"
+    },
+    {
+      "title": "GoLang",
+      "level": "intermediate"
+    }
+  ],
+  "languages": [
+    {
+      "title": "Russian",
+      "level": "native"
+    },
+    {
+      "title": "Belorussian",
+      "level": "native"
+    },
+    {
+      "title": "English",
+      "level": "b2"
+    },
+    {
+      "title": "Polish",
+      "level": "a1"
+    }
+  ],
+  "experience": {
+    "periods": [
+      {
+        "company_name": "Onega",
+        "domain": [
+          "Marketing"
+        ],
+        "homepage": "https://onega.by/",
+        "date_start": "28 Aug 2014 00:00:00 GMT",
+        "date_end": "03 Jun 2016 00:00:00 GMT",
+        "responsibilities": [
+          "Design and implementation event web pages",
+          "Design and implementation animated banner adds",
+          "Design POS materials"
+        ],
+        "tech_stack": [
+          "Adobe Photoshop",
+          "Adobe Illustrator",
+          "HTML",
+          "CSS",
+          "Javascript (ES5)",
+          "Git"
+        ]
+      },
+      {
+        "company_name": "Nominal Technologies",
+        "domain": [
+          "Online advertisement"
+        ],
+        "homepage": "https://nt.technology/",
+        "date_start": "01 Jul 2016 00:00:00 GMT",
+        "date_end": "05 Apr 2017 00:00:00 GMT",
+        "responsibilities": [
+          "Design and implement platform UI/UX",
+          "Design and implementation animated banner adds",
+          "Create and lead designers team"
+        ],
+        "tech_stack": [
+          "Adobe Photoshop",
+          "Adobe Illustrator",
+          "Adobe Edge",
+          "Adobe Animate",
+          "VueJS",
+          "GreenSockJS"
+        ]
+      },
+      {
+        "company_name": "UltraLab /   platform.io",
+        "domain": [
+          "Online advertisement"
+        ],
+        "homepage": "https://richpush.com",
+        "date_start": "01 Jul 2017 00:00:00 GMT",
+        "date_end": "15 Aug 2018 00:00:00 GMT",
+        "responsibilities": [
+          "Implementing features / fixing bugs",
+          "Refactoring (tech stack migration)",
+          "Release management"
+        ],
+        "tech_stack": [
+          "CommonJS",
+          "Aurelia",
+          "AngularJS",
+          "Webpack",
+          "JavaScript (ES6)",
+          "Axios"
+        ]
+      },
+      {
+        "company_name": "ObjectStyle",
+        "domain": [
+          "Full-cycle software development"
+        ],
+        "homepage": "https://www.objectstyle.com/",
+        "date_start": "20 Aug 2018 00:00:00 GMT",
+        "date_end": "08 Jul 2020 00:00:00 GMT",
+        "responsibilities": [
+          "Research activities",
+          "POC and prototyping",
+          "Architecture design",
+          "UX/UI Design",
+          "Implementing features / fixing bugs"
+        ],
+        "tech_stack": [
+          "VueJS",
+          "React",
+          "Redux",
+          "ReduxSaga",
+          "TypeScript",
+          "Jest",
+          "Webpack",
+          "Figma",
+          "CrossFilterJS"
+        ]
+      },
+      {
+        "company_name": "Kontur.io",
+        "domain": [
+          "Geospatial analysis"
+        ],
+        "homepage": "https://www.kontur.io/",
+        "date_start": "09 Jul 2020 00:00:00 GMT",
+        "responsibilities": [
+          "Research activities",
+          "POC and prototyping",
+          "Architecture design",
+          "UX/UI Design",
+          "Improving developer experience",
+          "Maintaining Open Source projects",
+          "Implementing features / fixing bugs"
+        ],
+        "tech_stack": [
+          "MapboxJS",
+          "React",
+          "Reatom",
+          "TypeScript",
+          "Vitest",
+          "Vite",
+          "AvaJs",
+          "ReactCosmos",
+          "Figma"
+        ]
+      }
+    ]
+  },
+  "education": {
+    "periods": [
+      {
+        "educational_facility": "Belarusian State University",
+        "homepage": "https://bsu.by/en/",
+        "date_start": "1 Sep 2009 00:00:00 GMT",
+        "date_end": "1 Aug 2014 00:00:00 GMT",
+        "specialty": "Psychology"
+      }
+    ]
+  }
+}

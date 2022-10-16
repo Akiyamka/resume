@@ -1,0 +1,9 @@
+:root {
+  --basic-text-color: #2b2b2b;
+  --unit: 8px;
+  --hlf-unit: 8px;
+  --dbl-unit: 16px;
+
+  --clr-link: rgb(0, 112, 213);
+  --clr-link-underline: rgba(0, 112, 213, 0.15);
+}

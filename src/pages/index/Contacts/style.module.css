@@ -1,0 +1,11 @@
+.address {
+  font-style: normal;
+  font-size: 0.85em;
+}
+
+.contactsList {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5em;
+  align-items: start;
+}

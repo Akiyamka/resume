@@ -1,0 +1,9 @@
+{
+  "category_name_skills": "Skills",
+  "skills_levels": {
+    "intermediate": "Intermediate",
+    "experienced": "Experienced",
+    "advanced": "Advanced",
+    "expert": "Expert"
+  }
+}

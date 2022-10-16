@@ -1,0 +1,178 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/Resume",
+  "definitions": {
+    "Resume": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "job_title": {
+          "type": "string"
+        },
+        "contacts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Contact"
+          }
+        },
+        "skills": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Skill"
+          }
+        },
+        "languages": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Language"
+          }
+        },
+        "experience": {
+          "$ref": "#/definitions/Experience"
+        },
+        "education": {
+          "$ref": "#/definitions/Education"
+        }
+      },
+      "required": [
+        "name",
+        "job_title",
+        "contacts",
+        "skills",
+        "languages",
+        "experience",
+        "education"
+      ],
+      "additionalProperties": false
+    },
+    "Contact": {
+      "type": "object",
+      "properties": {
+        "link": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "label"
+      ],
+      "additionalProperties": false
+    },
+    "Skill": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "level": {
+          "$ref": "#/definitions/SkillLevel"
+        },
+        "tip": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "level"
+      ],
+      "additionalProperties": false
+    },
+    "SkillLevel": {
+      "type": "string",
+      "enum": [
+        "intermediate",
+        "experienced",
+        "advanced",
+        "expert"
+      ]
+    },
+    "Language": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "level": {
+          "$ref": "#/definitions/LanguageSkill"
+        }
+      },
+      "required": [
+        "title",
+        "level"
+      ],
+      "additionalProperties": false
+    },
+    "LanguageSkill": {
+      "type": "string",
+      "enum": [
+        "native",
+        "a1",
+        "a2",
+        "b1",
+        "b2",
+        "c1",
+        "c2"
+      ]
+    },
+    "Experience": {
+      "type": "object",
+      "properties": {
+        "periods": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/EducationPeriod"
+          }
+        }
+      },
+      "required": [
+        "periods"
+      ],
+      "additionalProperties": false
+    },
+    "EducationPeriod": {
+      "type": "object",
+      "properties": {
+        "educational_facility": {
+          "type": "string"
+        },
+        "specialty": {
+          "type": "string"
+        },
+        "homepage": {
+          "type": "string"
+        },
+        "date_start": {
+          "type": "string"
+        },
+        "date_end": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "educational_facility",
+        "specialty",
+        "date_start"
+      ],
+      "additionalProperties": false
+    },
+    "Education": {
+      "type": "object",
+      "properties": {
+        "periods": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/EducationPeriod"
+          }
+        }
+      },
+      "required": [
+        "periods"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

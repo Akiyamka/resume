@@ -1,0 +1,17 @@
+.languages table {
+  width: 100%;
+}
+.languages table td {
+  padding: 4px 0;
+}
+
+.languages sup {
+  font-weight: 800;
+  cursor: help;
+  padding: 4px;
+}
+
+.level {
+  opacity: .5;
+  text-transform: capitalize;
+}

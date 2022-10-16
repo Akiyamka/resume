@@ -1,0 +1,19 @@
+{
+  "workbench.colorCustomizations": {
+    "sash.hoverBorder": "#c52b30",
+    "statusBar.background": "#9b2226",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#c52b30",
+    "statusBarItem.remoteBackground": "#9b2226",
+    "statusBarItem.remoteForeground": "#e7e7e7"
+  },
+  "peacock.color": "#9b2226",
+  "json.schemas": [
+    {
+      "fileMatch": [
+          "/resume.json",
+      ],
+      "url": "./src/data/resume.generated.schema.json"
+  },
+  ]
+}

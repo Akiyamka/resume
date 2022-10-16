@@ -1,0 +1,12 @@
+{
+  "category_name_languages": "Languages",
+  "languages_levels": {
+    "native": "Native",
+    "a1": "Beginner",
+    "a2": "Elementary",
+    "b1": "Intermediate English",
+    "b2": "Upper-Intermediate",
+    "c1": "Advanced",
+    "c2": "Proficiency"
+  }
+}
