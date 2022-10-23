@@ -1,3 +1,21 @@
+a {
+  display: inline;
+  text-decoration: none;
+  color: var(--clr-link);
+  border-bottom: 1px solid var(--clr-link-underline)
+}
 .external {
-  
+  position: relative;
+  margin-right: .5em;
+}
+
+.external:after {
+  content: '↑';
+  font-variant-position: super;
+  transform-origin: top left;
+  transform: rotate(45deg) translate(25%, -25%);
+  opacity: .3;
+  /* transform: rotate(45deg); */
+
+  position: absolute;
 }

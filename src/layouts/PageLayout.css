@@ -23,10 +23,3 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
-
-a {
-  display: inline;
-  text-decoration: none;
-  color: var(--clr-link);
-  border-bottom: 1px solid var(--clr-link-underline)
-}

@@ -6,7 +6,7 @@ export function SmartLink({ href, children, target }: { href?: string; target?: 
   if (!href) return children;
   const isExternalLink = href.startsWith('http') && new URL(href).host !== globalThis.location?.host;
   return (
-    <a href={href} target={target} class={cl({ [s.external]: isExternalLink })}>
+    <a href={href} target={target} class={cl({ [s.external]: isExternalLink })} title={href}>
       {children}
     </a>
   );
