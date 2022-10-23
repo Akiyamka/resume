@@ -124,6 +124,64 @@
         "periods": {
           "type": "array",
           "items": {
+            "$ref": "#/definitions/WorkPeriod"
+          }
+        }
+      },
+      "required": [
+        "periods"
+      ],
+      "additionalProperties": false
+    },
+    "WorkPeriod": {
+      "type": "object",
+      "properties": {
+        "company_name": {
+          "type": "string"
+        },
+        "domain": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "homepage": {
+          "type": "string"
+        },
+        "date_start": {
+          "type": "string"
+        },
+        "date_end": {
+          "type": "string"
+        },
+        "responsibilities": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "tech_stack": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "company_name",
+        "domain",
+        "date_start",
+        "responsibilities",
+        "tech_stack"
+      ],
+      "additionalProperties": false
+    },
+    "Education": {
+      "type": "object",
+      "properties": {
+        "periods": {
+          "type": "array",
+          "items": {
             "$ref": "#/definitions/EducationPeriod"
           }
         }
@@ -156,21 +214,6 @@
         "educational_facility",
         "specialty",
         "date_start"
-      ],
-      "additionalProperties": false
-    },
-    "Education": {
-      "type": "object",
-      "properties": {
-        "periods": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/EducationPeriod"
-          }
-        }
-      },
-      "required": [
-        "periods"
       ],
       "additionalProperties": false
     }

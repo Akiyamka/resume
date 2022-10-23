@@ -47,14 +47,17 @@ Page files should contain `.page.tsx` in name, and export page component with na
 - [x] contacts section
 - [x] skills section
 - [x] languages section
-- [ ] external link styles
-- [ ] experience section
-- [ ] education section
+- [ ] external link styles (add arrow on top right corner for external links)
+- [x] experience section
+- [x] education section
+- [ ] tooltips for years (from-to)
 - [ ] certificates section
-- [ ] download as [jsonresume](https://jsonresume.org/schema/)
-- [ ] add grouping fow skills section
+- [ ] download as [jsonresume](https://jsonresume.org/schema/)]
+- [ ] download as pdf
+- [ ] add highlight for rare skills (GIT, DE)
 - [ ] add mobile layout
-- [ ] feedback form
-- [ ] darg grb version
-- [ ] collect translation strings into one json with namespaces
-- [ ] detailed description for jobs
+- [ ] auto collect translation strings into one json with namespaces
+- [ ] icons for social links
+- [ ] detailed description for jobs?
+- [ ] add grouping fow skills section?
+- [ ] dark grb version?

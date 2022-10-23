@@ -25,7 +25,7 @@ function MainPage({ resume }: PageProps) {
       <Contacts classes={defaultClassList(s.top)} contacts={resume.contacts} />
       <Experience classes={defaultClassList(s.left)} experience={resume.experience} />
       <Skills classes={defaultClassList(s.right)} skills={resume.skills} />
-      <Education classes={defaultClassList(s.left)} education={{}}/>
+      <Education classes={defaultClassList(s.left)} education={resume.education}/>
       <Languages classes={defaultClassList(s.right)} languages={resume.languages} />
       <div class={`${s.right} ${s.cell}`}>
         <h3>Certificates</h3>

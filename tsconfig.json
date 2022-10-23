@@ -16,7 +16,8 @@
     "paths": {
       "~types": ["types"],
       "~assets/*": ["assets/*"],
-      "~data/*": ["data/*"]
+      "~data/*": ["data/*"],
+      "~common/*": ["common/*"]
     }
   },
 }
