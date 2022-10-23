@@ -1,9 +1,9 @@
 :root {
   --basic-text-color: #2b2b2b;
+  --page-background: #0D5C63; 
   --unit: 8px;
   --hlf-unit: 8px;
   --dbl-unit: 16px;
-
-  --clr-link: rgb(0, 112, 213);
+  --clr-link: rgb(0, 110, 164);
   --clr-link-underline: rgba(0, 112, 213, 0.15);
 }

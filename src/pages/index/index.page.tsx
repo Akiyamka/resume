@@ -7,30 +7,31 @@ import s from './style.module.css';
 import type { PageProps } from '~types';
 import { GridClassList } from './types';
 import { Education } from './Education';
+import './variables.css';
 
 const defaultClassList = (container: string): GridClassList => ({
   container,
   header: s.header,
-  content: s.cell
-})
+  content: s.cell,
+});
 
 function MainPage({ resume }: PageProps) {
   return (
-    <article class={s.resumeGrid}>
-      <Header
-        classes={defaultClassList(s.top)}
-        heading="Alexandr Dubinin"
-        subheading="Front-end developer"
-      />
-      <Contacts classes={defaultClassList(s.top)} contacts={resume.contacts} />
-      <Experience classes={defaultClassList(s.left)} experience={resume.experience} />
-      <Skills classes={defaultClassList(s.right)} skills={resume.skills} />
-      <Education classes={defaultClassList(s.left)} education={resume.education}/>
-      <Languages classes={defaultClassList(s.right)} languages={resume.languages} />
-      <div class={`${s.right} ${s.cell}`}>
-        <h3>Certificates</h3>
-      </div>
-    </article>
+    <div id="index-page">
+      <article class={s.resumeGrid}>
+        <Header classes={defaultClassList(s.top)} heading="Alexandr Dubinin" subheading="Front-end developer" />
+        <Contacts classes={defaultClassList(s.top)} contacts={resume.contacts} />
+        <Experience classes={defaultClassList(s.left)} experience={resume.experience} />
+        <Skills classes={defaultClassList(s.right)} skills={resume.skills} />
+        <Education classes={defaultClassList(s.left)} education={resume.education} />
+        <Languages classes={defaultClassList(s.right)} languages={resume.languages} />
+      </article>
+      <footer class={s.footer}>
+        <span>Download as PDF or JSON Resume</span>
+        <span>Switch theme</span>
+        <span style={{ 'margin-left': 'auto' }}>Last Update: 24.10.2022</span>
+      </footer>
+    </div>
   );
 }
 

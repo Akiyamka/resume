@@ -28,9 +28,6 @@ export function Education(props: { education: EducationType; classes: GridClassL
               </div>
               <TimeDistanceInWords utcStart={period.date_start} utcEnd={period.date_end} />
             </div>
-            <div class={s.timeMarker}>
-              <div class={s.dateContainer}>{new Date(period.date_start).toLocaleDateString()}</div>
-            </div>
           </div>
         ))}
       </div>

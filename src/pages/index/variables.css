@@ -1,0 +1,8 @@
+#index-page {
+  --headers-background: RGBA(68, 161, 160, 0.2);
+  --page-color: #F2F8FD;
+  --vertical-guide: 1px solid RGBA(68, 161, 160, 0.4);
+  --page-shadow: 20px 5px 70px -54px rgba(0, 0, 0, 1);
+  --footer-color: transparent;
+  --accent: rgb(236, 78, 32);
+}

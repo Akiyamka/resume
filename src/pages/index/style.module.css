@@ -3,11 +3,25 @@
   position: relative;
   width: 1100px;
   grid-template-columns: 1.3fr 1fr;
-  margin: 24px auto;
-  box-shadow: 20px 5px 70px -54px rgba(0, 0, 0, 0.3);
-  background-color: white;
+  margin: 24px auto 0;
+  box-shadow: var(--page-shadow);
+  background-color: var(--page-color);
   padding: 48px;
   box-sizing: border-box;
+}
+
+.footer {
+  width: 1100px;
+  margin: 0 auto 24px;
+  padding: 48px;
+  box-sizing: border-box;
+  background-color: var(--footer-color);
+  border-bottom: 4px solid var(--page-color);
+  color: rgba(255, 255, 255, .8);
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 3em;
+  align-items: center;
 }
 
 .header {
@@ -19,7 +33,7 @@
 }
 
 .header:not(.top) {
-  background-color: rgba(0, 112, 213, 0.05);
+  background-color: var(--headers-background);
 }
 
 .cell {
@@ -30,7 +44,7 @@
 
 .resumeGrid:after {
   content: '';
-  border: 1px solid #e5edff;
+  border-left: var(--vertical-guide);
   grid-column: 2;
   grid-row: 1;
   position: absolute;
