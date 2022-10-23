@@ -47,9 +47,10 @@ Page files should contain `.page.tsx` in name, and export page component with na
 - [x] contacts section
 - [x] skills section
 - [x] languages section
-- [ ] external link styles (add arrow on top right corner for external links)
+- [x] external link styles (add arrow on top right corner for external links)
 - [x] experience section
 - [x] education section
+- [x] fix layout bug (grid was bad idea?)
 - [ ] tooltips for years (from-to)
 - [ ] certificates section
 - [ ] download as [jsonresume](https://jsonresume.org/schema/)]

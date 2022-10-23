@@ -17,12 +17,20 @@
   justify-content: space-between;
 }
 
-.scrollable {
-  overflow: auto;
-  scroll-snap-type: y proximity;
+.availableSpace {
+  position: relative;
+  flex: 1;
+  min-height: 60vh;
 }
 
-.experience:before {
+.scrollable {
+  position: absolute;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+  height: 100%;
+}
+
+.availableSpace:before {
   position: absolute;
   content: '';
   bottom: 0;
@@ -102,4 +110,8 @@
 .dateContainer {
   padding: var(--unit) var(--dbl-unit);
   font-size: 15px;
+}
+
+.opaque {
+  opacity: 0;
 }

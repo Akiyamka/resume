@@ -8,7 +8,6 @@
   background-color: white;
   padding: 48px;
   box-sizing: border-box;
-  grid-template-rows: 1fr 55vh;
 }
 
 .header {
@@ -19,6 +18,10 @@
   margin-bottom: 24px;
 }
 
+.header:not(.top) {
+  background-color: rgba(0, 112, 213, 0.05);
+}
+
 .cell {
   padding-bottom: 38px;
   padding-right: 38px;
@@ -27,7 +30,7 @@
 
 .resumeGrid:after {
   content: '';
-  background-color: #f6f8f9;
+  border: 1px solid #e5edff;
   grid-column: 2;
   grid-row: 1;
   position: absolute;

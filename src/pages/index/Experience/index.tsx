@@ -16,39 +16,41 @@ export function Experience(props: { experience: ExperienceType; classes: GridCla
         <h3> {t.category_name_experience}</h3>
         {startEmployment && <TimeDistanceInWords utcStart={startEmployment} />}
       </div>
-      <div class={cl(s.scrollable, props.classes.content)}>
-        {sortedByDatePeriods.map((period) => (
-          <div class={s.period}>
-            <div class={s.header}>
-              <div>
-                <h4 class={s.name}>
-                  <SmartLink href={period.homepage}>{period.company_name}</SmartLink>
-                </h4>
-                <div class={s.domain}>{period.domain}</div>
+      <div class={s.availableSpace}>
+        <div class={cl(s.scrollable, props.classes.content)}>
+          {sortedByDatePeriods.map((period, i, arr) => (
+            <div class={s.period}>
+              <div class={s.header}>
+                <div>
+                  <h4 class={s.name}>
+                    <SmartLink href={period.homepage}>{period.company_name}</SmartLink>
+                  </h4>
+                  <div class={s.domain}>{period.domain}</div>
+                </div>
+                <TimeDistanceInWords utcStart={period.date_start} utcEnd={period.date_end} />
               </div>
-              <TimeDistanceInWords utcStart={period.date_start} utcEnd={period.date_end} />
-            </div>
-            <div class={s.responsibilities}>
-              <div>{t.experience_responsibilities}:</div>
-              <ul>
-                {period.responsibilities.map((resp) => (
-                  <li>{resp}</li>
-                ))}
-              </ul>
-            </div>
-            <div class={s.techStack}>
-              <div>{t.experience_tech_stack}:</div>
-              <div class={s.techContainer}>
-                {period.tech_stack.map((resp) => (
-                  <span class={s.techChips}>{resp}</span>
-                ))}
+              <div class={s.responsibilities}>
+                <div>{t.experience_responsibilities}:</div>
+                <ul>
+                  {period.responsibilities.map((resp) => (
+                    <li>{resp}</li>
+                  ))}
+                </ul>
+              </div>
+              <div class={s.techStack}>
+                <div>{t.experience_tech_stack}:</div>
+                <div class={s.techContainer}>
+                  {period.tech_stack.map((resp) => (
+                    <span class={s.techChips}>{resp}</span>
+                  ))}
+                </div>
+              </div>
+              <div class={cl(s.timeMarker, { [s.opaque]: i === arr.length - 1 })}>
+                <div class={s.dateContainer}>{new Date(period.date_start).toLocaleDateString()}</div>
               </div>
             </div>
-            <div class={s.timeMarker}>
-              <div class={s.dateContainer}>{new Date(period.date_start).toLocaleDateString()}</div>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
