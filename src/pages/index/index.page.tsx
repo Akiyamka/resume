@@ -15,11 +15,11 @@ const defaultClassList = (container: string): GridClassList => ({
   content: s.cell,
 });
 
-function MainPage({ resume }: PageProps) {
+function MainPage({ resume, lastUpdateDate }: PageProps) {
   return (
     <div id="index-page">
       <article class={s.resumeGrid}>
-        <Header classes={defaultClassList(s.top)} heading="Alexandr Dubinin" subheading="Front-end developer" />
+        <Header classes={defaultClassList(s.top)} heading={resume.name} subheading={resume.job_title} />
         <Contacts classes={defaultClassList(s.top)} contacts={resume.contacts} />
         <Experience classes={defaultClassList(s.left)} experience={resume.experience} />
         <Skills classes={defaultClassList(s.right)} skills={resume.skills} />
@@ -29,7 +29,7 @@ function MainPage({ resume }: PageProps) {
       <footer class={s.footer}>
         <span>Download as PDF or JSON Resume</span>
         <span>Switch theme</span>
-        <span style={{ 'margin-left': 'auto' }}>Last Update: 24.10.2022</span>
+        <span style={{ 'margin-left': 'auto' }}>Last Update: {lastUpdateDate.toLocaleString()}</span>
       </footer>
     </div>
   );

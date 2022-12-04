@@ -52,7 +52,7 @@ Page files should contain `.page.tsx` in name, and export page component with na
 - [x] education section
 - [x] fix layout bug (grid was bad idea?)
 - [x] add footer
-- [ ] auto last update date
+- [x] auto last update date
 - [ ] tooltips for years (from-to)
 - [ ] open external link in new tab
 - [ ] certificates section

@@ -1,8 +1,10 @@
 import type { Component } from 'solid-js'
 import type { PageContextBuiltIn } from 'vite-plugin-ssr'
 export type PageProps = {
-  resume: Resume
+  resume: Resume;
+  lastUpdateDate: Date;
 }
+
 export type PageContext = PageContextBuiltIn & {
   Page: (pageProps: PageProps) => Component
   pageProps: PageProps
