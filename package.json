@@ -17,6 +17,7 @@
     "vite-plugin-solid": "^2.3.0"
   },
   "dependencies": {
+    "@supastuff/json-resume-types": "^1.0.0",
     "@types/node": "^18.7.16",
     "clsx": "^1.2.1",
     "date-fns": "^2.29.3",
