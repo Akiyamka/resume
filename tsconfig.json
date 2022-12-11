@@ -17,7 +17,8 @@
       "~types": ["types"],
       "~assets/*": ["assets/*"],
       "~data/*": ["data/*"],
-      "~common/*": ["common/*"]
+      "~common/*": ["common/*"],
+      "~config": ["../config.ts"]
     }
   },
 }

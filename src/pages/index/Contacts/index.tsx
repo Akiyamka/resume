@@ -3,7 +3,19 @@ import type { Contact } from '../../../types';
 import type { GridClassList } from '../types';
 import s from './style.module.css';
 
-export function Contacts(props: { contacts: Contact[]; contentClass?: string, classes: GridClassList }) {
+const LinkWithLabel = ({ label, link, text }: { label: string; link: string; text: string }) => (
+  <div>
+    <span>
+      {label}
+      {': '}
+    </span>
+    <a href={link} target="_blank">
+      {text}
+    </a>
+  </div>
+);
+
+export function Contacts(props: { contacts: Contact[]; contentClass?: string; classes: GridClassList }) {
   if (props.contacts.length === 0) return null;
 
   return (
@@ -11,11 +23,11 @@ export function Contacts(props: { contacts: Contact[]; contentClass?: string, cl
       <div class={s.contactsList}>
         {props.contacts.map((c) =>
           c.link ? (
-            <a href={c.label} target="_blank">
-              {c.label}
-            </a>
+            <LinkWithLabel label={c.label} link={c.link} text={c.value} />
           ) : (
-            <span>{c.label}</span>
+            <span>
+              {c.label}: {c.label}
+            </span>
           )
         )}
       </div>

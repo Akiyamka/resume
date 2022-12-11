@@ -8,6 +8,12 @@
         "name": {
           "type": "string"
         },
+        "photo": {
+          "type": "string"
+        },
+        "location": {
+          "$ref": "#/definitions/Location"
+        },
         "job_title": {
           "type": "string"
         },
@@ -38,6 +44,7 @@
       },
       "required": [
         "name",
+        "location",
         "job_title",
         "contacts",
         "skills",
@@ -47,18 +54,58 @@
       ],
       "additionalProperties": false
     },
+    "Location": {
+      "type": "object",
+      "properties": {
+        "postalCode": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        },
+        "address": {
+          "type": "string"
+        },
+        "link": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "postalCode",
+        "city",
+        "country"
+      ],
+      "additionalProperties": false
+    },
     "Contact": {
       "type": "object",
       "properties": {
         "link": {
           "type": "string"
         },
+        "value": {
+          "type": "string"
+        },
         "label": {
           "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "email",
+            "social",
+            "phone",
+            "messenger"
+          ]
         }
       },
       "required": [
-        "label"
+        "value",
+        "label",
+        "type"
       ],
       "additionalProperties": false
     },

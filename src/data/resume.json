@@ -1,21 +1,30 @@
 {
   "name": "Alexandr Dubinin",
   "job_title": "Front-end developer",
+  "location": {
+    "postalCode": "43-300",
+    "city": "Bielsko-Biała",
+    "country": "Poland",
+    "link": "https://www.openstreetmap.org/relation/545474"
+  },
   "contacts": [
     {
+      "type": "email",
+      "label": "E-mail",
       "link": "mailto:akiyamka@gmail.com",
-      "label": "akiyamka@gmail.com"
+      "value": "akiyamka@gmail.com"
     },
     {
       "link": "https://t.me/akiyamka",
-      "label": "t.me/akiyamka"
+      "value": "@akiyamka",
+      "label": "Telegram",
+      "type": "messenger"
     },
     {
       "link": "https://github.com/Akiyamka",
-      "label": "github.com/Akiyamka"
-    },
-    {
-      "label": "Łódź, Poland"
+      "value": "@Akiyamka",
+      "label": "Github.com",
+      "type": "social"
     }
   ],
   "skills": [
