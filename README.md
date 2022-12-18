@@ -54,7 +54,7 @@ Page files should contain `.page.tsx` in name, and export page component with na
 - [x] add footer
 - [x] auto last update date
 - [ ] tooltips for years (from-to)
-- [ ] open external link in new tab
+- [x] open external link in new tab
 - [ ] certificates section
 - [ ] download as [jsonresume](https://jsonresume.org/schema/)]
 - [ ] download as pdf
@@ -63,5 +63,5 @@ Page files should contain `.page.tsx` in name, and export page component with na
 - [ ] auto collect translation strings into one json with namespaces
 - [ ] icons for social links
 - [ ] detailed description for jobs?
-- [ ] add grouping fow skills section?
+- [ ] add grouping for skills section?
 - [ ] dark grb version?
