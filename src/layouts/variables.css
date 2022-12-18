@@ -1,5 +1,5 @@
 :root {
-  --basic-text-color: #2b2b2b;
+  --basic-text-color: var(--theme-basic-textr-color);
   --page-background: #0D5C63; 
   --unit: 8px;
   --hlf-unit: 8px;
