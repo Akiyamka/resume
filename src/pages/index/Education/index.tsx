@@ -22,7 +22,7 @@ export function Education(props: { education: EducationType; classes: GridClassL
             <div class={s.header}>
               <div>
                 <h4 class={s.name}>
-                  <SmartLink href={period.homepage} target={"_blanck"}>{period.educational_facility}</SmartLink>
+                  <SmartLink href={period.homepage}>{period.educational_facility}</SmartLink>
                 </h4>
                 <div class={s.specialty}>{period.specialty}</div>
               </div>

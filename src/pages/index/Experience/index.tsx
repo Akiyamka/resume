@@ -23,7 +23,7 @@ export function Experience(props: { experience: ExperienceType; classes: GridCla
               <div class={s.header}>
                 <div>
                   <h4 class={s.name}>
-                    <SmartLink href={period.homepage} target={"_blanck"}>{period.company_name}</SmartLink>
+                    <SmartLink href={period.homepage}>{period.company_name}</SmartLink>
                   </h4>
                   <div class={s.domain}>{period.domain}</div>
                 </div>
