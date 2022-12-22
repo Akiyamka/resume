@@ -17,13 +17,10 @@ const defaultClassList = (container: string): GridClassList => ({
   content: s.cell,
 });
 
-const onSwitchTheme = () => {
-  theme() === 'light' ? setTheme(themes.dark) : setTheme(themes.light);
-}
 
 function MainPage({ resume, lastUpdateDate }: PageProps) {
   return (
-    <ThemeProvider>
+
     <div id="index-page">
       <article class={s.resumeGrid}>
         <Header classes={defaultClassList(s.top)} heading={resume.name} subheading={resume.job_title} />
@@ -39,7 +36,7 @@ function MainPage({ resume, lastUpdateDate }: PageProps) {
         <span style={{ 'margin-left': 'auto' }}>Last Update: {lastUpdateDate.toLocaleString()}</span>
       </footer>
     </div>
-    </ThemeProvider>
+
   );
 }
 

@@ -64,4 +64,4 @@ Page files should contain `.page.tsx` in name, and export page component with na
 - [ ] icons for social links
 - [ ] detailed description for jobs?
 - [ ] add grouping for skills section?
-- [ ] dark grb version?
+- [x] dark grb version?
