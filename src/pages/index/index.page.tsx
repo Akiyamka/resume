@@ -7,6 +7,8 @@ import s from './style.module.css';
 import type { PageProps } from '~types';
 import { GridClassList } from './types';
 import { Education } from './Education';
+import { ThemeProvider, themes, theme, setTheme } from './Context/ThemeContext';
+
 import './variables.css';
 
 const defaultClassList = (container: string): GridClassList => ({
@@ -15,8 +17,13 @@ const defaultClassList = (container: string): GridClassList => ({
   content: s.cell,
 });
 
+const onSwitchTheme = () => {
+  theme() === 'light' ? setTheme(themes.dark) : setTheme(themes.light);
+}
+
 function MainPage({ resume, lastUpdateDate }: PageProps) {
   return (
+    <ThemeProvider>
     <div id="index-page">
       <article class={s.resumeGrid}>
         <Header classes={defaultClassList(s.top)} heading={resume.name} subheading={resume.job_title} />
@@ -28,10 +35,11 @@ function MainPage({ resume, lastUpdateDate }: PageProps) {
       </article>
       <footer class={s.footer}>
         <span>Download as PDF or JSON Resume</span>
-        <span>Switch theme</span>
+        <span onClick={onSwitchTheme}>Switch theme</span>
         <span style={{ 'margin-left': 'auto' }}>Last Update: {lastUpdateDate.toLocaleString()}</span>
       </footer>
     </div>
+    </ThemeProvider>
   );
 }
 

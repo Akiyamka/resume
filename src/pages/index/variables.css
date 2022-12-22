@@ -1,8 +1,20 @@
+
 #index-page {
   --headers-background: RGBA(68, 161, 160, 0.2);
-  --page-color: #F2F8FD;
+  --page-color: var(--theme-page-color);
+  --basic-text-color: var(--theme-basic-textr-color);
   --vertical-guide: 1px solid RGBA(68, 161, 160, 0.4);
-  --page-shadow: 20px 5px 70px -54px rgba(0, 0, 0, .6);
+  --page-shadow: 20px 5px 70px -54px rgba(0, 0, 0, 0.6);
   --footer-color: transparent;
   --accent: rgb(236, 78, 32);
+}
+
+:root[data-theme="light"] {
+  --theme-page-color: #f2f8fd;
+  --theme-basic-textr-color: #2b2b2b;
+}
+
+:root[data-theme="dark"] {
+  --theme-page-color: #202124;
+  --theme-basic-textr-color: #afb4b9;
 }
