@@ -59,7 +59,7 @@ Page files should contain `.page.tsx` in name, and export page component with na
 - [ ] download as [jsonresume](https://jsonresume.org/schema/)]
 - [ ] download as pdf
 - [ ] add highlight for rare skills (GIT, DE)
-- [ ] add mobile layout
+- [x] add mobile layout
 - [ ] auto collect translation strings into one json with namespaces
 - [ ] icons for social links
 - [ ] detailed description for jobs?
