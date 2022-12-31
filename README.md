@@ -53,7 +53,7 @@ Page files should contain `.page.tsx` in name, and export page component with na
 - [x] fix layout bug (grid was bad idea?)
 - [x] add footer
 - [x] auto last update date
-- [ ] tooltips for years (from-to)
+- [x] tooltips for years (from-to)
 - [x] open external link in new tab
 - [ ] certificates section
 - [ ] download as [jsonresume](https://jsonresume.org/schema/)]
