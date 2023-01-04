@@ -10,7 +10,7 @@ const nowInUTC = () => new Date(Date.now()).toUTCString();
 const getDiff = (utcStart: string, utcEnd?: string) =>
   formatDistanceStrict(new Date(utcStart), new Date(utcEnd ?? nowInUTC()));
 
-const getYear = (utcStart: string, utcEnd?: string) => {
+const getYears = (utcStart: string, utcEnd?: string) => {
   const start = new Date(utcStart).getFullYear();
   const end = new Date(utcEnd ?? nowInUTC()).getFullYear();
   return `${start} - ${end}`;
