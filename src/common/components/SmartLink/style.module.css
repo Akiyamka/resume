@@ -11,9 +11,8 @@ a {
 
 .external:after {
   content: '↑';
-  font-variant-position: super;
   transform-origin: top left;
-  transform: rotate(45deg) translate(25%, -25%);
+  transform: rotate(45deg) translate(30%, -50%);
   opacity: .3;
   /* transform: rotate(45deg); */
 

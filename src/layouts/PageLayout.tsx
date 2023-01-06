@@ -1,24 +1,24 @@
-import type { Accessor, JSX, Component } from 'solid-js';
+import type { JSX } from 'preact/jsx-runtime';
 import './PageLayout.css';
 import './variables.css';
 
 export { PageLayout };
 
 export interface Route {
-  Page: Component;
+  Page: (props: Record<string, unknown>) => JSX.Element;
   pageProps: Record<string, unknown>;
 }
 
 interface Props {
-  route: Accessor<Route | null>;
+  route: Route;
 }
 interface Children {
   children: JSX.Element;
 }
 
-const PageLayout: Component<Props> = (props) => {
+function PageLayout(props: Props) {
   const renderedRoute = () => {
-    const { Page, pageProps } = props.route() ?? {};
+    const { Page, pageProps } = props.route ?? {};
     return Page && <Page {...pageProps} />;
   };
 
@@ -29,10 +29,10 @@ const PageLayout: Component<Props> = (props) => {
   );
 };
 
-const Layout: Component<Children> = (props) => {
+function Layout(props: Children) {
   return <div class="default-layout">{props.children}</div>;
 };
 
-const Content: Component<Children> = (props) => {
+function Content(props: Children) {
   return <div class="default-layout__content">{props.children}</div>;
 };
