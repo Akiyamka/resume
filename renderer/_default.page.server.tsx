@@ -1,10 +1,8 @@
-import { generateHydrationScript, renderToStream } from 'solid-js/web';
+import renderToString from 'preact-render-to-string'
+
 import { PageLayout } from '../src/layouts/PageLayout';
 import { escapeInject, dangerouslySkipEscape, stampPipe } from 'vite-plugin-ssr';
 import { PageContext } from '~types';
-
-export { render };
-export { passToClient };
 
 // See https://vite-plugin-ssr.com/data-fetching
 const passToClient = ['pageProps', 'documentProps'];
@@ -15,18 +13,16 @@ const fonts = `
 <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600&display=swap" rel="stylesheet"> 
 `;
 
-function render(pageContext: PageContext) {
-  const { Page, pageProps } = pageContext;
 
-  const { pipe } = renderToStream(() => <PageLayout route={() => ({ Page, pageProps })} />);
-  stampPipe(pipe, 'node-stream');
+function render(pageContext: PageContext) {
+  const renderedString = renderToString(<PageLayout route={pageContext} />);
 
   // See https://vite-plugin-ssr.com/head
   const { documentProps } = pageContext;
   const title = (documentProps && documentProps.title) || 'Vite SSR app';
   const description = (documentProps && documentProps.description) || 'App using Vite + vite-plugin-ssr';
 
-  return escapeInject`<!DOCTYPE html>
+  const documentHtml = escapeInject`<!DOCTYPE html>
     <html lang="en">
       <head>
         <meta charset="UTF-8" />
@@ -34,10 +30,19 @@ function render(pageContext: PageContext) {
         <meta name="description" content="${description}" />
         <title>${title}</title>
         ${dangerouslySkipEscape(fonts)}
-        ${dangerouslySkipEscape(generateHydrationScript())}
       </head>
       <body>
-        <div id="page-view">${pipe}</div>
+        <div id="page-view">${dangerouslySkipEscape(renderedString)}</div>
       </body>
     </html>`;
+
+  return {
+    documentHtml,
+    pageContext: {
+      // We can add some `pageContext` here, which is useful if we want to do page redirection https://vite-plugin-ssr.com/page-redirection
+    }
+  }
 }
+
+export { render };
+export { passToClient };
