@@ -66,7 +66,7 @@
 .timeMarker:after {
   content: '';
   flex: 1;
-  border-bottom: 1px dashed black;
+  border-bottom: var(--borders);
   display: block;
   height: 1px;
 }

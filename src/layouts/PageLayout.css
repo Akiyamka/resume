@@ -7,9 +7,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
-  background-color: var(--page-background);
+  background-color: var(--clr-background);
   font-weight: 500;
-  color: var(--basic-text-color);
+  color: var(--clr-text);
   font-size: 18px;
 }
 

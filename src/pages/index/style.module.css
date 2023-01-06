@@ -44,7 +44,7 @@
 
 .resumeGrid:after {
   content: "";
-  border-left: var(--vertical-guide);
+  border-left: var(--borders);
   grid-column: 2;
   grid-row: 1;
   position: absolute;

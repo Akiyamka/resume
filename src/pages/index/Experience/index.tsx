@@ -25,10 +25,15 @@ export function Experience(props: { experience: ExperienceType; classes: GridCla
                   <h4 class={s.name}>
                     <SmartLink href={period.homepage}>{period.company_name}</SmartLink>
                   </h4>
-                  <div class={s.domain}>{period.domain}</div>
+                  <div class={s.domain}>{period.domain.join(', ')}</div>
                 </div>
                 <TimeDistanceInWords utcStart={period.date_start} utcEnd={period.date_end} />
               </div>
+              <div class={s.position}>
+                <div>{t.experience_position}:</div>
+                <div>{period.position}</div>
+              </div>
+
               <div class={s.responsibilities}>
                 <div>{t.experience_responsibilities}:</div>
                 <ul>

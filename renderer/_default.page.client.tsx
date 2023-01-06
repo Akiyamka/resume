@@ -1,31 +1,20 @@
-export const clientRouting = true
-export { render }
+import { hydrate, render as render_ } from 'preact'
+import { PageLayout } from '../src/layouts/PageLayout';
+import type { PageContextBuiltInClient } from 'vite-plugin-ssr/client/router';
+import type { PageContext } from '~types';
 
-import { createSignal } from 'solid-js'
-import { hydrate } from 'solid-js/web'
-import { PageLayout } from '../src/layouts/PageLayout'
-import type { Route } from '../src/layouts/PageLayout'
-import type { PageContextBuiltInClient } from 'vite-plugin-ssr/client/router'
-import type { PageContext } from '~types'
-
-let layoutReady = false
-
-// Central signal to track the current active route.
-const [route, setRoute] = createSignal<Route | null>(null)
+/**
+ * https://github.com/brillout/vite-plugin-ssr/blob/main/examples/preact-client-routing/renderer/_default.page.client.jsx
+ */
 
 function render(pageContext: PageContextBuiltInClient & PageContext) {
-  const content = document.getElementById('page-view')
-  const { Page, pageProps } = pageContext
-
-  // Set the new route.
-  setRoute({ Page, pageProps })
-
-  // If haven't rendered the layout yet, do so now.
-  if (!layoutReady) {
-    // Render the page.
-    // This is the first page rendering; the page has been rendered to HTML
-    // and we now make it interactive.
-    hydrate(() => <PageLayout route={() => route()} />, content!)
-    layoutReady = true
+  const container = document.getElementById('page-view');
+  if (pageContext.isHydration) {
+    hydrate(<PageLayout route={pageContext} />, container!)
+  } else {
+    render_(<PageLayout route={pageContext} />, container!)
   }
 }
+
+export const clientRouting = true;
+export { render };
