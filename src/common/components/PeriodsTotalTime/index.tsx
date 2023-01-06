@@ -1,4 +1,4 @@
-import formatDistanceStrict from 'date-fns/formatDistanceStrict';
+import { formatDistanceStrict } from 'date-fns';
 
 type Period = {
   date_start: string;
