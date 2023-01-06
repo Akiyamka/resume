@@ -3,7 +3,7 @@ This page contain some info about me and my skills.
 Also this project - experiment with technologies that I have been putting aside for a long time.
 
 ## Tech stack
- - [solidJS](https://www.solidjs.com/) - react substitute in terms of performance and not only.  
+ - [Preact](https://preactjs.com/) - Fast 3kB alternative to React with the same modern API  
  - [viteJS](https://vitejs.dev/) - modern alternative of webpack.  
  - In order to get the application load quickly, and work from static hosting I use pre-rendering (SSG)
 
@@ -33,7 +33,7 @@ For build the app use should use:
 $ pnpm build 
 ```
 Builds the app for production to the `dist` folder.<br>
-It correctly bundles Solid in production mode and optimizes the build for the best performance.
+It correctly bundles application in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.<br>
 

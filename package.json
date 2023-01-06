@@ -1,5 +1,5 @@
 {
-  "name": "vite-template-solid",
+  "name": "vite-template-preact",
   "version": "0.0.0",
   "description": "",
   "scripts": {
@@ -13,16 +13,24 @@
     "ajv": "^8.11.0",
     "ts-json-schema-generator": "^1.0.0",
     "typescript": "^4.8.2",
-    "vite": "^3.0.9",
-    "vite-plugin-solid": "^2.3.0"
+    "vite": "^3.0.9"
   },
   "dependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/plugin-transform-react-jsx": "^7.20.7",
+    "@preact/preset-vite": "^2.5.0",
+    "@preact/signals": "^1.1.3",
+    "@reatom/core": "^3.1.18",
+    "@reatom/hooks": "^3.1.2",
     "@supastuff/json-resume-types": "^1.0.0",
     "@types/node": "^18.7.16",
+    "autoprefixer": "^10.4.13",
     "clsx": "^1.2.1",
     "date-fns": "^2.29.3",
     "node-fetch": "^3.2.10",
-    "solid-js": "^1.5.4",
+    "postcss-nested": "^6.0.0",
+    "preact": "^10.11.3",
+    "preact-render-to-string": "^5.2.6",
     "vite-plugin-ssr": "^0.4.32",
     "vite-tsconfig-paths": "^3.5.0"
   }

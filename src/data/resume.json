@@ -122,6 +122,7 @@
     "periods": [
       {
         "company_name": "Onega",
+        "position": "Designer",
         "domain": [
           "Marketing"
         ],
@@ -144,6 +145,7 @@
       },
       {
         "company_name": "Nominal Technologies",
+        "position": "Web developer",
         "domain": [
           "Online advertisement"
         ],
@@ -165,7 +167,8 @@
         ]
       },
       {
-        "company_name": "UltraLab /   platform.io",
+        "company_name": "UltraLab / platform.io",
+        "position": "Front-end developer",
         "domain": [
           "Online advertisement"
         ],
@@ -188,6 +191,7 @@
       },
       {
         "company_name": "ObjectStyle",
+        "position": "Front-end developer",
         "domain": [
           "Full-cycle software development"
         ],
@@ -215,6 +219,7 @@
       },
       {
         "company_name": "Kontur.io",
+        "position": "Front-end developer",
         "domain": [
           "Geospatial analysis"
         ],

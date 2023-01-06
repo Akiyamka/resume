@@ -63,7 +63,7 @@
   padding: 0;
 }
 
-.responsibilities {
+.responsibilities, .position {
   margin-bottom: var(--dbl-unit);
 }
 
@@ -86,7 +86,7 @@
 
 .techChips {
   display: inline-block;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: var(--borders);
   padding: calc(var(--hlf-unit) / 2) var(--hlf-unit);
   font-size: 16px;
 }
@@ -103,7 +103,7 @@
 .timeMarker:after {
   content: '';
   flex: 1;
-  border-bottom: 1px dashed black;
+  border-bottom: var(--borders);
   display: block;
   height: 1px;
 }

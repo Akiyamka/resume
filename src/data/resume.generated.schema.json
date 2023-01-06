@@ -186,6 +186,9 @@
         "company_name": {
           "type": "string"
         },
+        "position": {
+          "type": "string"
+        },
         "domain": {
           "type": "array",
           "items": {
@@ -212,10 +215,14 @@
           "items": {
             "type": "string"
           }
+        },
+        "summary": {
+          "type": "string"
         }
       },
       "required": [
         "company_name",
+        "position",
         "domain",
         "date_start",
         "responsibilities",
