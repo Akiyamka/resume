@@ -1,4 +1,4 @@
-import type { Component } from 'solid-js';
+import type { Component } from 'preact';
 import type { PageContextBuiltIn } from 'vite-plugin-ssr';
 export type PageProps = {
   resume: Resume;
@@ -44,12 +44,14 @@ export type EducationPeriod = {
 
 export type WorkPeriod = {
   company_name: string;
+  position: string;
   domain: string[];
   homepage?: string;
   date_start: string;
   date_end?: string;
   responsibilities: string[];
   tech_stack: string[];
+  summary?: string;
 };
 
 export type Contact = {
