@@ -1,7 +1,7 @@
 #index-page {
   --page-color: var(--clr-foreground);
   --page-background: var(--clr-background);
-  --page-shadow: 20px 5px 70px -54px var(--clr-shadow);
+  --page-shadow: 0px 8px 45px -40px var(--clr-shadow);
   --headers-background: var(--clr-weak-background);
   --borders: 1px solid var(--clr-weak);
   --footer-color: transparent;
