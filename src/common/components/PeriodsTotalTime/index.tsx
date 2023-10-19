@@ -35,7 +35,7 @@ export function TimeDistanceInWords(props: {
   class?: string;
 }) {
   const distance = getDiff(props.utcStart, props.utcEnd);
-  const distanceYear = getYear(props.utcStart, props.utcEnd);
+  const distanceYear = getYears(props.utcStart, props.utcEnd);
   return distance ? (
     <div title={distanceYear}>
       {distance}
