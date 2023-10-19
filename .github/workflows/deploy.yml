@@ -12,6 +12,9 @@ jobs:
       - name: Check out
         uses: actions/checkout@v3
 
+      - name: Prepare env
+        run: pnpm i
+
       - name: Generate your content
         run: npm run build
 
