@@ -50,4 +50,4 @@ jobs:
 
         with:
           source-directory: dist/client
-          target-branch: gh-pages
+          target-branch: www
