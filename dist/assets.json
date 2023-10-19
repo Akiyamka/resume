@@ -1,0 +1,92 @@
+{
+  "_chunk-0739ec96.js": {
+    "file": "assets/chunks/chunk-0739ec96.js"
+  },
+  "_chunk-89ffcc11.js": {
+    "file": "assets/chunks/chunk-89ffcc11.js"
+  },
+  "node_modules/.pnpm/vike@0.4.143_vite@4.5.0/node_modules/vike/dist/esm/client/client-routing-runtime/entry.js": {
+    "dynamicImports": [
+      "renderer/_error.page.jsx",
+      "src/pages/index/index.page.tsx",
+      "renderer/_default.page.client.tsx",
+      "renderer/_default.page.server.tsx?extractAssets&lang.tsx",
+      "src/pages/index/index.page.server.ts?extractAssets&lang.ts"
+    ],
+    "file": "assets/entries/entry-client-routing.3a8cb247.js",
+    "imports": [
+      "_chunk-0739ec96.js"
+    ],
+    "isEntry": true,
+    "src": "node_modules/.pnpm/vike@0.4.143_vite@4.5.0/node_modules/vike/dist/esm/client/client-routing-runtime/entry.js"
+  },
+  "node_modules/.pnpm/vike@0.4.143_vite@4.5.0/node_modules/vike/dist/esm/client/server-routing-runtime/entry.js": {
+    "dynamicImports": [
+      "renderer/_error.page.jsx",
+      "src/pages/index/index.page.tsx",
+      "renderer/_default.page.client.tsx",
+      "renderer/_default.page.server.tsx?extractAssets&lang.tsx",
+      "src/pages/index/index.page.server.ts?extractAssets&lang.ts"
+    ],
+    "file": "assets/entries/entry-server-routing.68e75b44.js",
+    "imports": [
+      "_chunk-0739ec96.js"
+    ],
+    "isEntry": true,
+    "src": "node_modules/.pnpm/vike@0.4.143_vite@4.5.0/node_modules/vike/dist/esm/client/server-routing-runtime/entry.js"
+  },
+  "renderer/_default.page.client.tsx": {
+    "file": "assets/entries/renderer_default.page.client.a593ca2d.js",
+    "imports": [
+      "_chunk-89ffcc11.js",
+      "renderer/_default.page.server.tsx?extractAssets&lang.tsx"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": "renderer/_default.page.client.tsx"
+  },
+  "renderer/_default.page.server.tsx?extractAssets&lang.css": {
+    "file": "assets/static/default.page.server.e6220b49.css",
+    "src": "renderer/_default.page.server.tsx?extractAssets&lang.css"
+  },
+  "renderer/_default.page.server.tsx?extractAssets&lang.tsx": {
+    "css": [
+      "assets/static/default.page.server.e6220b49.css"
+    ],
+    "file": "assets/entries/renderer_default.page.server.extractAssets.2a749dc2.js",
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": "renderer/_default.page.server.tsx?extractAssets&lang.tsx"
+  },
+  "renderer/_error.page.jsx": {
+    "file": "assets/entries/renderer_error.page.78b61f44.js",
+    "imports": [
+      "_chunk-89ffcc11.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": "renderer/_error.page.jsx"
+  },
+  "src/pages/index/index.page.css": {
+    "file": "assets/static/index.page.3cbbd950.css",
+    "src": "src/pages/index/index.page.css"
+  },
+  "src/pages/index/index.page.server.ts?extractAssets&lang.ts": {
+    "file": "assets/entries/src_pages_index_index.page.server.extractAssets.4ed993c7.js",
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": "src/pages/index/index.page.server.ts?extractAssets&lang.ts"
+  },
+  "src/pages/index/index.page.tsx": {
+    "css": [
+      "assets/static/index.page.3cbbd950.css"
+    ],
+    "file": "assets/entries/src_pages_index_index.page.3c1fa698.js",
+    "imports": [
+      "_chunk-89ffcc11.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": "src/pages/index/index.page.tsx"
+  }
+}
