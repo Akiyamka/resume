@@ -1,10 +1,13 @@
 import { hydrate, render as render_ } from 'preact'
 import { PageLayout } from '../src/layouts/PageLayout';
-import type { PageContextBuiltInClient } from 'vite-plugin-ssr/client/router';
+import type {
+  PageContextBuiltInClientWithClientRouting as
+  PageContextBuiltInClient
+} from 'vike/types'
 import type { PageContext } from '~types';
 
 /**
- * https://github.com/brillout/vite-plugin-ssr/blob/main/examples/preact-client-routing/renderer/_default.page.client.jsx
+ * https://github.com/vikejs/vike/blob/main/examples/preact-client-routing/renderer/_default.page.client.jsx
  */
 
 function render(pageContext: PageContextBuiltInClient & PageContext) {

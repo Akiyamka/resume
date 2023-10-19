@@ -7,5 +7,5 @@
   display: flex;
   flex-flow: column nowrap;
   gap: 0.5em;
-  align-items: start;
+  align-items: flex-start;
 }

@@ -1,11 +1,11 @@
 import type { Component } from 'preact';
-import type { PageContextBuiltIn } from 'vite-plugin-ssr';
+import type { PageContextBuiltInServer } from 'vike/types';
 export type PageProps = {
   resume: Resume;
   lastUpdateDate: Date;
 };
 
-export type PageContext = PageContextBuiltIn & {
+export type PageContext = PageContextBuiltInServer & {
   Page: (pageProps: PageProps) => Component;
   pageProps: PageProps;
   documentProps?: {

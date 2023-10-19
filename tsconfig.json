@@ -15,7 +15,6 @@
     "baseUrl": "./src",
     "paths": {
       "~types": ["types"],
-      "~assets/*": ["assets/*"],
       "~data/*": ["data/*"],
       "~common/*": ["common/*"],
       "~config": ["../config.ts"]
