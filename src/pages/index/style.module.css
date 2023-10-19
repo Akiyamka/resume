@@ -17,7 +17,7 @@
   box-sizing: border-box;
   background-color: var(--footer-color);
   border-bottom: 4px solid var(--page-color);
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--clr-text-weak);
   display: flex;
   flex-flow: row nowrap;
   gap: 3em;

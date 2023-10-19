@@ -5,11 +5,12 @@
   --dbl-unit: 16px;
 
   /* Colors */
-  --clr-background: #9cb3b2;
+  --clr-background: #e6eeee;
   --clr-shadow: rgba(0, 0, 0, 0.6);
   --clr-weak-background: rgba(68, 161, 160, 0.2);
   --clr-weak: rgba(68, 161, 160, 0.4);
   --clr-text: #2b2b2b;
+  --clr-text-weak: #2b2b2b;
   --clr-foreground: #f2f8fd;
   --clr-link: rgb(0, 110, 164);
   --clr-link-underline: rgba(0, 112, 213, 0.15);
@@ -22,6 +23,7 @@
     --clr-weak-background: rgba(255, 121, 37, 0.392);
     --clr-weak: rgba(246, 158, 86, 0.3);
     --clr-text: white;
+    --clr-text-weak: rgba(255,255,255,0.8);
     --clr-foreground: #333;
     --clr-link: rgb(249, 146, 63);
     --clr-link-underline: rgba(255, 140, 45, 0.6);

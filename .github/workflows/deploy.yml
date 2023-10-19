@@ -1,0 +1,23 @@
+name: Deploy to github pages
+
+on:
+  push:
+    branches:
+      - 'master'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v3
+
+      - name: Generate your content
+        run: npm run build
+
+      - name: Publish current build to GitHub Pages
+        uses: rayluo/github-pages-overwriter@v1.3
+
+        with:
+          source-directory: ./dist/client
+          target-branch: gh-pages

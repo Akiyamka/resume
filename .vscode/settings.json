@@ -15,5 +15,8 @@
       ],
       "url": "./src/data/resume.generated.schema.json"
   },
-  ]
+  ],
+  "yaml.schemas": {
+    "https://json.schemastore.org/github-workflow.json": "file:///home/akiyamka/git/resume/.github/workflows/deploy.yml"
+  }
 }

@@ -60,14 +60,9 @@
       "tip": "UX patterns, composition, animation, designers software"
     },
     {
-      "title": "GIS",
+      "title": "FE GIS Tools",
       "level": "experienced",
       "tip": "Mapbox, Leaflet, DeckGL, QGis, etc."
-    },
-    {
-      "title": "Version Control System",
-      "level": "experienced",
-      "tip": "GIT"
     },
     {
       "title": "Team Leading",
@@ -76,16 +71,11 @@
     {
       "title": "CI/CD",
       "level": "experienced",
-      "tip": "Gitlab and Github runners"
+      "tip": "Gitlab, Github runners, Tomcat, Jenkins"
     },
     {
       "title": "Linux System Administrator",
       "level": "experienced"
-    },
-    {
-      "title": "Access control",
-      "level": "experienced",
-      "tip": "OAuth, JWT, SSO, etc."
     },
     {
       "title": "Databases",
@@ -97,6 +87,10 @@
     },
     {
       "title": "GoLang",
+      "level": "intermediate"
+    },
+    {
+      "title": "Flutter",
       "level": "intermediate"
     }
   ],

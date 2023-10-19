@@ -27,8 +27,8 @@ function MainPage({ resume, lastUpdateDate }: PageProps) {
       <Languages classes={defaultClassList(s.right)} languages={resume.languages} />
     </article>
     <footer class={s.footer}>
-      <span>Download as PDF or JSON Resume</span>
-      <span style={{ 'margin-left': 'auto' }}>Last Update: {lastUpdateDate.toLocaleString()}</span>
+      {/* <span>Download as PDF or JSON Resume</span> */}
+      <span style={{ 'margin': 'auto' }}>Last Update: {lastUpdateDate.toLocaleString()}</span>
     </footer>
   </div>
   );
