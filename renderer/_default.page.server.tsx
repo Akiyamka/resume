@@ -19,8 +19,8 @@ function render(pageContext: PageContext) {
 
   // See https://vike.dev/head
   const { documentProps } = pageContext;
-  const title = (documentProps && documentProps.title) || 'Vite SSR app';
-  const description = (documentProps && documentProps.description) || 'App using Vite + vike';
+  const title = (documentProps && documentProps.title) || 'Alexandr Dubinin';
+  const description = (documentProps && documentProps.description) || 'Alexandr Dubinin CV';
 
   const documentHtml = escapeInject`<!DOCTYPE html>
     <html lang="en">
