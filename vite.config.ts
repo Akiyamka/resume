@@ -7,6 +7,7 @@ import postcssConfig from './postcss.config';
 export default (() => {
   validateJson('src/data/resume.json', 'src/types/index.ts', 'Resume');
   return defineConfig(({ mode }) => ({
+    base: '/resume/',
     plugins: [preact(), ssr({ prerender: true })],
     server: {
       port: 3000,
